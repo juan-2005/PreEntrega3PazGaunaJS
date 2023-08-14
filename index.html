@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articulos TaeKwonDo</title>
+
+    <link rel="stylesheet" href="./adrgon.css">
+
+    <link rel="stylesheet" href="./estilo.css">
+
+    <link rel="icon" href="./favicon.ico">
+
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="four columns">
+                    <span id="logo">Articulos TaeKwonDo</span>
+                    <center><img src="./Img/ITF_TKD.jpg" width="100px" height="100px"></center>
+                </div>
+                
+                
+                <div class="two columns u-pull-right">
+                    <ul>
+                        <li class="submenu">
+                            <img src="img/cart.png" id="img-carrito">
+
+                            <div id="carrito">
+                                
+                                <table id="lista-carrito" class="u-full-width">
+                
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th>Cantidad</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+
+                                </table>
+                                <a href="#" id="vaciar-carrito" class="boton u-full-width">Vaciar Carrito</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <center><h1>Articulos TaeKwonDo</h1></center>
+
+    <center><p>Bienvenido a Articulos TaeKwonDo, en esta pagina podras encontrar todo elemento relacionado al Taekwondo, ya seas estudiante o Sabonim nuestros articulos te serviran tanto para entrenar o para ayudar al local donde enseñes.</p></center>
+
+    <center><p>Complete por favor el siguiente formulario para poder registrarlo para el resivo y poder contactarlo en caso de ofertas.</p></center>
+
+    <form action="formulario">
+
+        <label for="user">Usuario:</label><br>
+        <input type="text" id="user"><br>
+        
+        <label for="number">Edad:</label><br>
+        <input type="number" id="number"><br>
+        
+        <label for="dni">DNI:</label><br>
+        <input type="number" id="dni"><br>
+        
+        <label for="email">Correo Electronico</label><br>
+        <input type="text" id="email"><br>
+        
+        <label for="phone">Numero Telefonico</label><br>
+        <input type="number" id="phone"><br>
+        
+        <input type="submit" id="send" value="Enviar">
+        
+        </form>
+
+    <div id="lista-productos" class="container">
+        <h1 id="encabezado" class="encabezado">Productos</h1>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="Img/Dobok.jpg" alt="" class="imagen-producto u-full-width">
+                    <div class="info-card">
+                        <h4>Dobok Completo</h4>
+                        <p>Uniforme de principiante</p>
+                        <p class="precio">$12000</p>
+                        <a href="#" class="u-full-width button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/Cinturones.jpg" alt="" class="imagen-producto u-full-width">
+                    <div class="info-card">
+                        <h4>Cinturones</h4>
+                        <p>Cinturones de gerarquia</p>
+                        <p class="precio">$600</p>
+                        <a href="#" class="u-full-width button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/Protectores.webp" alt="" class="imagen-producto u-full-width">
+                    <div class="info-card">
+                        <h4>Protectores</h4>
+                        <p>Kit completo</p>
+                        <p class="precio">$18000</p>
+                        <a href="#" class="u-full-width button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/Libro.webp" alt="" class="imagen-producto u-full-width">
+                    <div class="info-card">
+                        <h4>Libro</h4>
+                        <p>Modulo del TaeKwonDo</p>
+                        <p class="precio">$10000</p>
+                        <a href="#" class="u-full-width button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
+                    </div>
+                </div>
+               
+            </div>
+
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/remera.jpg" alt="" class="imagen-producto u-full-width">
+                    <div class="info-card">
+                        <h4>Remeras</h4>
+                        <p>Remeras de gimnasia</p>
+                        <p class="precio">$13000</p>
+                        <a href="#" class="u-full-width button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/Pesas.webp" alt="" class="imagen-producto u-full-width">
+                    <div class="info-card">
+                        <h4>Pesas</h4>
+                        <p>Kit de pesas basicas</p>
+                        <p class="precio">$5000</p>
+                        <a href="#" class="u-full-width button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<script src="main.js"></script>
