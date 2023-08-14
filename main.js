@@ -9,7 +9,14 @@ const vaciarCarritoBtn = document.querySelector('#vaciar-carrito');
 const contenedorCarrito = document.querySelector('#lista-carrito tbody')
 
 
+let formulario = []
+let formularioEnLS = JSON.stringify(localStorage.getItem('formulario'))
 
+if (formularioEnLS){
+    formulario = formularioEnLS
+}
+
+renderFormulario(formulario)
 
 
 
